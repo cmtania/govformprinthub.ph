@@ -25,4 +25,8 @@ export class ListFormComponent implements OnInit {
     this.listForm.push(form);
     this.listForm.push(form);
   }
+
+  trackByFn(index: number, item: any){
+    return index;
+  }
 }

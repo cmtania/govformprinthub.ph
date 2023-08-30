@@ -1,5 +1,5 @@
 <div class="container">
-    <ng-container *ngFor="let item of listForm">
+    <ng-container *ngFor="let item of listForm; trackBy: trackByFn">
         <div class="item-container">
             <div class="item-header">
                 <h5>{{item.Name}}</h5>
